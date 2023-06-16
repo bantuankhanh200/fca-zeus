@@ -1,7 +1,7 @@
 {
-  "name": "fca-saxal-remake",
-  "version": "31.40.11",
-  "description": "Facebook Chat Api Remake by Md Sagor Munshi",
+  "name": "fca-dongdz-mod",
+  "version": "5.0.0",
+  "description": "Api dành cho Bot chat Messenger!!",
   "main": "index.js",
   "scripts": {
     "test": "mocha",
@@ -11,12 +11,12 @@
   "author": "Md Sagor Munshi, ALvee Ahmed",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/MdSagorMunshi/Fca-Saxal-Remake/issues"
+    "url": "https://github.com/MDong-06/fca-dongdz-mod/issues"
   },
-  "homepage": "https://github.com/MdSagorMunshi/Fca-Saxal-Remake#readme",
+  "homepage": "https://github.com/MDong-06/fca-dongdz-mod#readme",
   "repository": {
     "type": "git",
-    "url": "git://github.com/MdSagorMunshi/Fca-Saxal-Remake.git"
+    "url": "git://github.com/MDong-06/fca-dongdz-mod.git"
   },
   "dependencies": {
     "aes-js": "latest",
@@ -79,9 +79,9 @@
     }
   },
   "keywords": [
-    "fca saxal",
-    "fca-saxal-remake",
-    "saxal fca",
-    "saxal"
+    "fca dongdz",
+    "fca-dongdz-mod",
+    "fca",
+    "fca-horizon"
   ]
 }
