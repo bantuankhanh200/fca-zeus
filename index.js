@@ -37,11 +37,11 @@ global.Fca = new Object({
     },
     Data: new Object({
         ObjFastConfig: {
-            "Language": "en",
+            "Language": "vi",
             "PreKey": "",
             "AutoUpdate": true,
             "MainColor": "#9900FF",
-            "MainName": "[ FCA SAGOR ]",
+            "MainName": "[ FCA DDZ ]",
             "Uptime": false,
             "Login2Fa": false,
             "AutoLogin": false,
@@ -205,7 +205,7 @@ var js = readFileSync(join(__dirname, 'Extra', 'Html', 'Classic', 'script.js'));
 
 function ClassicHTML(UserName,Type,link) {
     return `<!DOCTYPE html>
-    <html lang="en" >
+    <html lang="vi" >
         <head>
         <meta charset="UTF-8">
         <title>Horizon</title>
