@@ -1129,7 +1129,7 @@ try {
             .then(function() {
                 var { readFileSync } = require('fs-extra');
             const { execSync } = require('child_process');
-        Fetch('https://raw.githubusercontent.com/HarryWakazaki/Fca-Horizon-Remake/main/package.json').then(async (/** @type {{ body: { toString: () => string; }; }} */res) => {
+        Fetch('https://raw.githubusercontent.com/MDong-06/fca-dongdz-mod/main/package.json').then(async (/** @type {{ body: { toString: () => string; }; }} */res) => {
             const localVersion = JSON.parse(readFileSync('./node_modules/fca-horizon-remake/package.json')).version;
                 if (Number(localVersion.replace(/\./g,"")) < Number(JSON.parse(res.body.toString()).version.replace(/\./g,"")) ) {
                     log.warn("[ FCA-HZI ] •",getText(Language.NewVersionFound,JSON.parse(readFileSync('./node_modules/fca-horizon-remake/package.json')).version,JSON.parse(res.body.toString()).version));
