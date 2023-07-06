@@ -1,128 +1,115 @@
-## Notifications !
+# Api Cho ChatBot Messenger
 
-Note! This Is a Horizon Remake Product (By Schmavery's Facebook-Chat-Api, The Author Is Not Responsible!), If There Is Any Error Please Try Using Another Product!
+Facebook Đã Có Và Cho Người Dùng Tạo Api Cho Chatbots 😪 Tại Đey => [Đây Nè](https://developers.facebook.com/docs/messenger-platform).
 
-## Support For :
+### Api Này Có Thể Khiến Cho Bạn Payy Acc Như Cách Acc Bạn Chưa Từng Có, Hãy Chú Ý Nhé =))
 
-+ Support English, VietNamese !,
-+ All bot if using listenMqtt first.
+Lưu Ý ! Nếu Bạn Muốn Sài Api Này Hãy Xem Document Tại [Đây Nè](https://github.com/Schmavery/facebook-chat-api).
 
-# Api For ChatBot Messenger
+## Tải Về 
 
-Facebook Already Has And For Users To Create Api For Chatbots 😪 At Dey => [Here](https://developers.facebook.com/docs/messenger-platform).
-
-### This Api Can Make You Payy Acc Like You Never Have, Please Pay Attention =))
-
-Note ! If You Want To Share This Api Please See The Document At [Here](https://github.com/Schmavery/facebook-chat-api).
-
-## Download
-
-If You Want To Use It, Download It By:
+Nếu Bạn Muốn Sử Dụng, Hãy Tải Nó Bằng Cách:
 ```bash
-npm i fca-horizon-remake
+npm i fca-dongdev-remake
 ```
 or
 ```bash
-npm install fca-horizon-remake
+npm install fca-dongdev-remake
 ```
 
-It Will Load Into node_modules (Your Lib) - Note Replit Won't Show Where to Find
+Nó Sẽ Tải Vô node_modules (Lib Của Bạn) - Lưu Ý Replit Sẽ Không Hiện Đâu Mà Tìm 😪
 
-### Download Latest Version Or Update
+### Tải Bản Mới Nhất Hoặc Update
 
-If You Want To Use The Latest Version Or Update Then Go To Terminal Or Command Prompt Enter :
+Nếu Bạn Muốn Sử Dụng Phiên Bản Mới Nhất Hay Cập Nhật Thì Hãy Vô Terminal Hoặc Command Promt Nhập :
 ```bash
-npm install fca-saxal-remake@latest
+npm install fca-dongdev-remake@latest
 ```
-Or
+Hoặc
 ```bash
-npm i fca-saxal-remake@latest
+npm i fca-dongdev-remake@latest
 ```
 
-## If You Want To Test Api
+## Nếu Bạn Muốn Test Api 
 
-Benefits For This You Will Not Spend Time Paying Acc And Have Acc
-Please Use With Demo Account => [Facebook Whitehat Accounts](https://www.facebook.com/whitehat/accounts/).
+Lợi Ích Cho Việc Này Thì Bạn Sẽ Không Tốn Thời Gian Pay Acc Và Có Acc 😪
+Hãy Sử Dụng Với Tài Khoản Thử Nghiệm => [Facebook Whitehat Accounts](https://www.facebook.com/whitehat/accounts/).
 
-## Using
+## Cách Sử Dụng
 
 ```javascript
-const login = require("fca-horizon-remake"); // get from lib
+const login = require("fca-dongdev-remake"); // lấy từ lib ra 
 
-// log in
-login({email: "Gmail Account", password: "Your Facebook Password"}, (err, api) => {
+// đăng nhập
+login({email: "Gmail Account", password: "Mật Khẩu Facebook Của Bạn"}, (err, api) => {
 
-     if(err) return console.error(err); // error case
+    if(err) return console.error(err); // trường hợp lỗi
 
-     // create bots that automatically copy you:
-     api.listenMqtt((err, message) => {
-         api.sendMessage(message.body, message.threadID);
-     });
+    // tạo bot tự động nhái theo bạn:
+    api.listenMqtt((err, message) => {
+        api.sendMessage(message.body, message.threadID);
+    });
 
 });
 ```
 
-As a result, it will copy you as shown below:
-<img width="517" alt="screen shot 2016-11-04 at 14 36 00" src="https://cloud.githubusercontent.com/assets/4534692/20023545/f8c24130-a29d-11e6-9ef7-47568bdbc1f2 .png">
+Kết Quả Là Nó Sẽ Nhái Bạn Như Hình Dưới:
+<img width="517" alt="screen shot 2016-11-04 at 14 36 00" src="https://cloud.githubusercontent.com/assets/4534692/20023545/f8c24130-a29d-11e6-9ef7-47568bdbc1f2.png">
 
-If You Want Advanced Use Then Use The Bots Listed Above!
+Nếu Bạn Muốn Sử Dụng Nâng Cao Thì Hãy Sử Dụng Các Loại Bot Được Liệt Kê Ở Trên !
 
-## List
+## Cài Đặt Cho Mirai: 
 
-You Can Read Full Api At => [here](DOCS.md).
-
-## Install For Mirai:
-
-You Need To Go To Mirai.js File, Then Find The Line
+Bạn Cần Vô File Mirai.js,Sau Đó Tìm Đến Dòng
 ```js
-     var login = require('depending on bot');
-     /* Maybe :
-         var login = require('@maihuybao/fca-Unofficial');
-         var login = require('fca-saxal-get');
-         var login = require('fca-unofficial-force');
-     ...
-     */
+    var login = require('tùy bot'); 
+    /* Có thể là :
+        var login = require('@maihuybao/fca-Unofficial');
+        var login = require('fca-xuyen-get');
+        var login = require('fca-unofficial-force');
+    ...   
+    */
 ```
 
-And Replace It With:
+Và Thay Nó Bằng:
 
 ```js
-     var login = require('fca-horizon-remake')
+    var login = require('fca-dongdev-remake')
 ```
 
-Then Run As Normal!
+Sau Đó Thì Chạy Bình Thường Thôi  !
 
-## Self-study
+## Tự Nghiên Cứu
 
-If You Want To Research Or Create Your Own Bot Then Go Here To Read Its Function And How To Use It => [Link](https://github.com/Schmavery/facebook-chat-api#Unofficial %20Facebook%20Chat%20API)
+Nếu Bạn Muốn Tự Nghiên Cứu Hoặc Tạo Bot Cho Riêng Bạn Thì Bạn Hãy Vô Cái Này Đọc Chức Năng Của Nó Và Cách Sử Dụng => [Link](https://github.com/Schmavery/facebook-chat-api#Unofficial%20Facebook%20Chat%20API)
 
 ------------------------------------
 
-### Save Login Information.
+### Lưu Lại Thông Tin Đăng Nhập.
 
-To Save You Need 1 Apstate Type (Cookie, etc,..) To Save Or Use Login Code As Above To Login !
+Để Lưu Lại Thì Bạn Cần 1 Apstate Kiểu (Cookie, etc,..) Để Lưu Lại Hoặc Là Sử Dụng Mã Login Như Trên Để Đăng Nhập !
 
-And This Mode Is Available In Some Bots In Vietnam So You Can Rest assured!
+Và Chế Độ Này Đã Có Sẵn Trong 1 Số Bot Việt Nam Nên Bạn Cứ Yên Tâm Nhé !
 
-__Instructions With Appstate__
+__Hướng Dẫn Với Appstate__
 
 ```js
 const fs = require("fs");
-const login = require("fca-horizon-remake");
+const login = require("fca-dongdev-remake");
 
-var credentials = {email: "FB_EMAIL", password: "FB_PASSWORD"}; // info tk
+var credentials = {email: "FB_EMAIL", password: "FB_PASSWORD"}; // thông tin tk
 
 login(credentials, (err, api) => {
-     if(err) return console.error(err);
-     // log in
-     fs.writeFileSync('appstate.json', JSON.stringify(api.getAppState(), null,'\t')); //create appstate
+    if(err) return console.error(err);
+    // đăng nhập
+    fs.writeFileSync('appstate.json', JSON.stringify(api.getAppState(), null,'\t')); //tạo appstate
 });
 ```
 
-Or Easier (Professional) You Can Use => [c3c-fbstate](https://github.com/c3cbot/c3c-fbstate) To Get Fbstate And Rename It To Apstate Also ! (appstate.json)
+Hoặc Dễ Dàng Hơn ( Chuyên Nghiệp ) Bạn Có Thể Dùng => [c3c-fbstate](https://github.com/c3cbot/c3c-fbstate) Để Lấy Fbstate And Rename Lại Thành Apstate Cũng Được ! (appstate.json)
 
 ------------------------------------
 
 ## FAQS
 
-FAQS => [Link](https://github.com/MdSagorMunshi/Fca-Saxal-Remake#FAQS)
+FAQS => [Link](https://github.com/Schmavery/facebook-chat-api#FAQS)
