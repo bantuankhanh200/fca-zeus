@@ -1,7 +1,7 @@
 {
-  "name": "fca-dongdev",
+  "name": "fca-dongdev-remake",
   "version": "1.7.0",
-  "description": "Api dành cho Bot chat Messenger!!",
+  "description": "Facebook Chat Api Chống Get (available) Và Pay Acc (maybe?) !!",
   "main": "index.js",
   "scripts": {
     "test": "mocha",
@@ -79,9 +79,8 @@
     }
   },
   "keywords": [
-    "fca-dongdev",
+    "fca-dongdev-remake",
     "fb-chat-api",
-    "fca",
-    "fca-horizon"
+    "fca"
   ]
 }
