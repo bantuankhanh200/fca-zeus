@@ -1,6 +1,6 @@
 {
-  "name": "fca-dongdz-mod",
-  "version": "5.0.0",
+  "name": "fca-dongdev",
+  "version": "1.7.0",
   "description": "Api dành cho Bot chat Messenger!!",
   "main": "index.js",
   "scripts": {
@@ -11,12 +11,12 @@
   "author": "Md Sagor Munshi, ALvee Ahmed",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/MDong-06/fca-dongdz-mod/issues"
+    "url": "https://github.com/.../issues"
   },
-  "homepage": "https://github.com/MDong-06/fca-dongdz-mod#readme",
+  "homepage": "https://github.com/...#readme",
   "repository": {
     "type": "git",
-    "url": "git://github.com/MDong-06/fca-dongdz-mod.git"
+    "url": "git://...git"
   },
   "dependencies": {
     "aes-js": "latest",
@@ -45,7 +45,7 @@
     "synthetic-saxal-database": "latest"
   },
   "engines": {
-    "node": ">=14.x <16.x"
+    "node": ">=12.x <16.x"
   },
   "devDependencies": {
     "eslint": "latest",
@@ -79,8 +79,8 @@
     }
   },
   "keywords": [
-    "fca dongdz",
-    "fca-dongdz-mod",
+    "fca-dongdev",
+    "fb-chat-api",
     "fca",
     "fca-horizon"
   ]
