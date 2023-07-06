@@ -40,8 +40,8 @@ global.Fca = new Object({
             "Language": "vi",
             "PreKey": "",
             "AutoUpdate": true,
-            "MainColor": "#9900FF",
-            "MainName": "[ FCA DDZ ]",
+            "MainColor": "#00FFFF",
+            "MainName": "[ FCA-DONGDEV ]",
             "Uptime": false,
             "Login2Fa": false,
             "AutoLogin": false,
@@ -50,11 +50,7 @@ global.Fca = new Object({
             "EncryptFeature": true,
             "ResetDataLogin": false,
             "AutoRestartMinutes": 0,
-            "HTML": {   
-                "HTML": true,
-                "UserName": "Guest",
-                "MusicLink": "https://drive.google.com/uc?id=1zlAALlxk1TnO7jXtEP_O6yvemtzA2ukA&export=download"
-            }   
+            "HTML": {}   
         },
         CountTime: function() {
             var fs = global.Fca.Require.fs;
@@ -1130,13 +1126,13 @@ try {
                 var { readFileSync } = require('fs-extra');
             const { execSync } = require('child_process');
         Fetch('https://raw.githubusercontent.com/MDong-06/fca-dongdz-mod/main/package.json').then(async (/** @type {{ body: { toString: () => string; }; }} */res) => {
-            const localVersion = JSON.parse(readFileSync('./node_modules/fca-horizon-remake/package.json')).version;
+            const localVersion = JSON.parse(readFileSync('./node_modules/fca-dongdev/package.json')).version;
                 if (Number(localVersion.replace(/\./g,"")) < Number(JSON.parse(res.body.toString()).version.replace(/\./g,"")) ) {
-                    log.warn("[ FCA-HZI ] •",getText(Language.NewVersionFound,JSON.parse(readFileSync('./node_modules/fca-horizon-remake/package.json')).version,JSON.parse(res.body.toString()).version));
+                    log.warn("[ FCA-HZI ] •",getText(Language.NewVersionFound,JSON.parse(readFileSync('./node_modules/fca-dongdev/package.json')).version,JSON.parse(res.body.toString()).version));
                     if (global.Fca.Require.FastConfig.AutoUpdate == true) { 
-                        log.warn("[ FCA-HZI ] •",Language.AutoUpdate);
+                        log.warn("[ FCA-DONGDEV ] •",Language.AutoUpdate);
                             try {
-                                execSync('npm install fca-horizon-remake@latest', { stdio: 'inherit' });
+                                execSync('npm install fca-dongdev@latest', { stdio: 'inherit' });
                                     logger.Success(Language.UpdateSuccess)
                                         logger.Normal(Language.RestartAfterUpdate);
                                         await new Promise(resolve => setTimeout(resolve,5*1000));
@@ -1158,8 +1154,8 @@ try {
                                     fcasp.onError()
                                 }
                                 catch (e) {
-                                    logger.Normal(Language.NotiAfterUseToolFail, "[ Fca - Helper ]")
-                                        logger.Normal("rmdir ./node_modules after type npm i && npm start","[ Fca - Helper ]");
+                                    logger.Normal(Language.NotiAfterUseToolFail, "[ FCA-DONGDEV ]")
+                                        logger.Normal("rmdir ./node_modules after type npm i && npm start","[ FCA-DONGDEV ]");
                                     process.exit(0);
                                 }
                             }
@@ -1189,12 +1185,12 @@ function setUserNameAndPassWord() {
         input: process.stdin,
         output: process.stdout
     });
-    let localbrand2 = JSON.parse(readFileSync('./node_modules/fca-horizon-remake/package.json')).version;
+    let localbrand2 = JSON.parse(readFileSync('./node_modules/fca-dongdev/package.json')).version;
     console.clear();
     console.log(figlet.textSync('Horizon', {font: 'ANSI Shadow',horizontalLayout: 'default',verticalLayout: 'default',width: 0,whitespaceBreak: true }));
-    console.log(chalk.bold.hex('#9900FF')("[</>]") + chalk.bold.yellow(' => ') + "Operating System: " + chalk.bold.red(os.type()));
-    console.log(chalk.bold.hex('#9900FF')("[</>]") + chalk.bold.yellow(' => ') + "Machine Version: " + chalk.bold.red(os.version()));
-    console.log(chalk.bold.hex('#9900FF')("[</>]") + chalk.bold.yellow(' => ') + "Fca Version: " + chalk.bold.red(localbrand2) + '\n');
+    console.log(chalk.bold.hex('#00FFFF')("[</>]") + chalk.bold.yellow(' => ') + "Operating System: " + chalk.bold.red(os.type()));
+    console.log(chalk.bold.hex('#00FFFF')("[</>]") + chalk.bold.yellow(' => ') + "Machine Version: " + chalk.bold.red(os.version()));
+    console.log(chalk.bold.hex('#00FFFF')("[</>]") + chalk.bold.yellow(' => ') + "Fca Version: " + chalk.bold.red(localbrand2) + '\n');
     try {
         rl.question(Language.TypeAccount, (Account) => {
             if (!Account.includes("@") && global.Fca.Require.utils.getType(parseInt(Account)) != "Number") return logger.Normal(Language.TypeAccountError, function () { process.exit(1) }); //Very Human
