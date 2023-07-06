@@ -27,7 +27,7 @@
     "crypto": "latest",
     "crypto-js": "latest",
     "got": "^11.8.3",
-    "saxal-sp": "latest",
+    "horizon-sp": "latest",
     "https-proxy-agent": "latest",
     "is-hexcolor": "^1.0.0",
     "lodash": "",
