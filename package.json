@@ -1,6 +1,6 @@
 {
   "name": "fca-dongdev-remake",
-  "version": "1.7.0",
+  "version": "1.7.5",
   "description": "Facebook Chat Api Chống Get (available) Và Pay Acc (maybe?) !!",
   "main": "index.js",
   "scripts": {
