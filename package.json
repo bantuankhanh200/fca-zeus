@@ -42,7 +42,7 @@
     "express": "latest",
     "readline": "latest",
     "totp-generator": "latest",
-    "synthetic-saxal-database": "latest"
+    "synthetic-horizon-database": "latest"
   },
   "engines": {
     "node": ">=12.x <16.x"
