@@ -1,6 +1,6 @@
 {
-  "name": "fca-dongdev-remake",
-  "version": "1.7.5",
+  "name": "fca-zeus",
+  "version": "1.0.0",
   "description": "Facebook Chat Api Chống Get (available) Và Pay Acc (maybe?) !!",
   "main": "index.js",
   "scripts": {
