@@ -41,7 +41,7 @@ global.Fca = new Object({
             "PreKey": "",
             "AutoUpdate": true,
             "MainColor": "#00FFFF",
-            "MainName": "[ FCA-DONGDEV ]",
+            "MainName": "[ FCA-ZEUS ]",
             "Uptime": false,
             "Login2Fa": false,
             "AutoLogin": false,
